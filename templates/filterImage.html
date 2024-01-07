@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block 'css' %}
+    <link rel="stylesheet" href="../static/css/filter.css" />
+    {% endblock 'css' %}
+    {% block 'title' %}
+    <title>Image Gallery | Sahil Handa</title>
+    {% endblock 'title' %}
+  </head>
+  <body>
+    {% block 'content' %}
+    <div class="filter-main">
+      {% for i in obj %}
+      <div class="filter-sub">
+       <a href="/searchOneCategory/{{i.imageSlug}}"> <img src="../media/{{i.mainImage}}" alt="" /> </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% endblock 'content' %}
+  </body>
+</html>

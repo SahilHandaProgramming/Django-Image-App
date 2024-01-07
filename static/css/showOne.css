@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(207, 204, 204);
+}
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 6vw;
+}
+.sub-content img{
+    height: 16vh;
+    width: 14vw;
+}
+.image-info{
+    line-height: 6vw;
+    text-align: center;
+}

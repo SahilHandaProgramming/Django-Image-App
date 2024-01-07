@@ -1,0 +1,33 @@
+.sub-content img {
+  display: inline-block;
+  height: 14vh;
+  width: 9vw;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vw;
+  padding: 2vw;
+}
+
+.toast {
+  background-color: lightgreen;
+  width: 23%;
+  padding: 2vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  transition: all 5s ease-in 5s;
+  opacity: 1;
+}
+.toast button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+body{
+  background: rgb(207, 204, 204);
+}

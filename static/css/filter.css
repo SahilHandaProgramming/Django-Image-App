@@ -1,0 +1,15 @@
+.filter-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4vh;
+  padding: 4vw;
+}
+
+.filter-sub img {
+  height: 17vh;
+  width: 12vw;
+  gap: 2em;
+}
+body {
+  background: rgb(207, 204, 204);
+}

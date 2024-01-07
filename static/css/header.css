@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1vw;
+  background: rgb(178, 174, 174);
+}
+.header-text {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.header-submit {
+  background: transparent;
+  border: none;
+}
+
+.header-text::placeholder {
+  color: white;
+}
+
+a svg {
+  color: white;
+}
+
+/* .category-box {
+  position: relative;
+  top: 2vh;
+  text-align: center;
+  display: block;
+} */
+.category-box{
+  transition: all 1s ease-in-out 1s;
+  display: none;
+}
+div h4{
+  text-align: center;
+  line-height: 3vh;
+}
+span button{
+  border: none;
+  background: none;
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block 'css' %}
+    <link rel="stylesheet" href="../static/css/showOne.css" />
+    {% endblock 'css' %} {% block 'title' %}
+    <title>Image Gallery | Sahil Handa</title>
+    {% endblock 'title' %}
+  </head>
+  <body>
+    {% block 'content' %}
+    <div class="main-content">
+      <div class="sub-content">
+        <img src="/media/{{obj.mainImage}}" alt="" />
+      </div>
+      <div class="image-info">
+        <h3>Name : {{obj.imageName}}</h3>
+        <h3>Category : {{obj.category}}</h3>
+      </div>
+    </div>
+    {% endblock 'content' %}
+  </body>
+</html>

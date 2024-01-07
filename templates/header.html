@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <a href="/mainPage/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+        </a>
+        <div class="category">
+            <h5>You can Search Through The Categories <span><button class="category-btn">&darr;</button></span></h5>
+            <div class="category-box">
+                <h4>Nature</h4>
+                <h4>Sports</h4>
+                <h4>Traditional</h4>
+                <h4>Business</h4>
+                <h4>Lifestyle</h4>
+            </div>
+        </div>
+        <h2>Image Gallery</h2>
+        <form action="{% url 'searchCat' %}">
+            <input type="text" class="header-text" name="text" id="" placeholder="Search Via Category">
+            <input type="submit" value="&rarr;" class="header-submit" > 
+        </form>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
